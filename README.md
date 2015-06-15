@@ -1,3 +1,3 @@
 # rugmi
-Colabirators:
+Collaborators:
 Riaan
