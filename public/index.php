@@ -4,6 +4,9 @@
 // 1. load libraries & models
 require_once '../libraries/auth.lib.php';
 require_once '../libraries/database.lib.php';
+require_once '../models/image.model.php';
+require_once '../models/images.collection.php';
+
 
 // 2. Logic
 
