@@ -7,4 +7,8 @@
 	<script src="assets/js/bootstrap.js"></script>
 </head>
 <body>
+	<header>
+		<h1>Welcome to Rugmi</h1>
+	</header>
+
 	
