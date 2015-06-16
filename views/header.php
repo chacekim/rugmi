@@ -6,6 +6,10 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+	<header>
+		<h1>Welcome to Rugmi</h1>
+	</header>
+
 	
 	<header>
 		<div class="container">
