@@ -1,11 +1,21 @@
-<?php
+<?php 
+// controller
 
-# index.php
+// 1. load libraries & models
+require_once '../libraries/auth.lib.php';
+require_once '../libraries/database.lib.php';
 
-# Load libraries and models
+// 2. Logic
 
-# Logic
+$is_logged_in = Auth::is_logged_in();
 
-# Load views
-include '../views/header.php';
+// 3. Load views
+
+if($is_logged_in) {
+	include '../views/logged_in_header.php';
+} else {
+	include '../views/header.php';
+}
+include '../views/image_list.php';
 include '../views/footer.php';
+ ?>
