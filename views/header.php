@@ -6,14 +6,10 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<header>
-		<h1>Welcome to Rugmi</h1>
-	</header>
 
-	
 	<header>
 		<div class="container">
-			<h1>Rubmi home</h1>
+			<h1>Rugmi</h1>
 			<nav>
 				<a href="index.php">Home</a>
 				<a href="login.php">Login</a>
