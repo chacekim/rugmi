@@ -5,7 +5,7 @@
 # load the Model library if it has not been done
 require_once '../libraries/model.lib.php';
 
-class image extends Model {
+class Image extends Model {
 
 	# tell the page model what table it belongs to
 	protected $table = 'images';
