@@ -1,8 +1,3 @@
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 8fd7a70417d61b219f6660e5d9e076f3fa1109c0
 <?php 
 // controller
 
@@ -33,7 +28,3 @@ include '../views/image_list.php';
 
 include '../views/footer.php';
  ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> 8fd7a70417d61b219f6660e5d9e076f3fa1109c0
