@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-<?php  
 
-
-
-
-include '../views/header.php';
-
-include '../views/image_list.php';
-
-=======
 <?php 
 // controller
 
@@ -24,6 +14,8 @@ require_once '../models/images.collection.php';
 $is_logged_in = Auth::is_logged_in();
 $images = new Image();
 $imgaes->url = $_GET['url'];
+$imgaes->url = $_GET['caption'];
+
 
 // 3. Load views
 
@@ -35,4 +27,3 @@ if($is_logged_in) {
 include '../views/image_list.php';
 include '../views/footer.php';
  ?>
->>>>>>> b19666d18edf813458daa6e20a380c8b09ec972d
