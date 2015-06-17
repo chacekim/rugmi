@@ -1,36 +1,4 @@
-<<<<<<< HEAD
 
-	
-	<ul class ="flex-container">
-
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-		<li class="flex-item"> <div class='button'></div></li>
-
-	</ul>
-
-=======
 <h1>image list</h1>
 
 <main>
@@ -44,4 +12,3 @@
 	<?php endforeach ; ?>
 	</ul>
 </main>
->>>>>>> b19666d18edf813458daa6e20a380c8b09ec972d
