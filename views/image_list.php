@@ -5,7 +5,7 @@
 	<ul class="flex-container">
 
 
-	<?php foreach ($images as $image): ?>
+	<?php foreach ($images->items as $image): ?>
 
 		<li class="flex-item"><img src="assets/img/<?php echo $image->url; ?>" alt="<?php echo $image->caption; ?>"></li>
 

@@ -11,10 +11,7 @@ require_once '../models/images.collection.php';
 // 2. Logic
 
 $is_logged_in = Auth::is_logged_in();
-$images = new Image();
-$imgaes->url = $_GET['url'];
-$imgaes->caption = $_GET['caption'];
-
+$images = new Images_Collection(['deleted' => '0']);
 
 // 3. Load views
 
