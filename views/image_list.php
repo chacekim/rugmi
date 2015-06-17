@@ -10,7 +10,11 @@
 
 	<?php foreach ($images->items as $image): ?>
 
-		<img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->caption ?>" class="flex-item">
+		<li>
+			<img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->caption ?>" class="flex-item">
+
+			<textarea></textarea>
+		</li>
 
 	<?php endforeach ; ?>
 	</ul>
