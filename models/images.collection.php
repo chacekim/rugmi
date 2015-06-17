@@ -12,4 +12,6 @@ class Images_Collection extends Collection {
 		parent::__construct($this->table, $where);
 	}
 
+	
+
 }
