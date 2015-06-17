@@ -39,5 +39,4 @@ if($_POST) {
 
 include '../views/header.php';
 include '../views/login_form.php';
-include '../views/image_list.php';
 include '../views/footer.php';

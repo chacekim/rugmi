@@ -7,7 +7,7 @@
 
 	<?php foreach ($images as $image): ?>
 
-		<li class="flex-item"><img src="<?php echo $image->url; ?>" alt="<?php echo $image->caption; ?>"></li>
+		<li class="flex-item"><img src="assets/img/<?php echo $image->url; ?>" alt="<?php echo $image->caption; ?>"></li>
 
 	<?php endforeach ; ?>
 	</ul>

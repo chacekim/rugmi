@@ -14,7 +14,7 @@ require_once '../models/images.collection.php';
 $is_logged_in = Auth::is_logged_in();
 $images = new Image();
 $imgaes->url = $_GET['url'];
-$imgaes->url = $_GET['caption'];
+$imgaes->caption = $_GET['caption'];
 
 
 // 3. Load views
