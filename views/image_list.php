@@ -1,24 +1,12 @@
 <h1>image list</h1>
 <main>
-	<div class="row">
-		<ul>
-			<li><img src="" alt=""></li>
-			<li><img src="" alt=""></li>
-			<li><img src="" alt=""></li>
-		</ul>
-	</div>
-	<div class="row">
-		<ul>
-			<li><img src="" alt=""></li>
-			<li><img src="" alt=""></li>
-			<li><img src="" alt=""></li>
-		</ul>
-	</div>
-	<div class="row">
-		<ul>
-			<li><img src="" alt=""></li>
-			<li><img src="" alt=""></li>
-			<li><img src="" alt=""></li>
-		</ul>
-	</div>
+	<ul>
+		
+		<?php foreach($images as $image): ?>
+		<li>	
+			<img src="<?=$image->url;?>" alt="<?=$image->caption?>">
+		</li>
+		<?php endforeach; ?>
+	</ul>
 </main>
+
