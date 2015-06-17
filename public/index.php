@@ -11,6 +11,7 @@ require_once '../models/images.collection.php';
 // 2. Logic
 
 $is_logged_in = Auth::is_logged_in();
+$images = new Model();
 
 // 3. Load views
 
