@@ -11,6 +11,8 @@ require_once '../models/image.model.php';
 require_once '../models/user.model.php';
 
 // 2. Logic
+
+Auth::kickout('login.php');
 $is_logged_in = Auth::is_logged_in();
 $images = new Model();
 
@@ -21,6 +23,11 @@ if($is_logged_in) {
 } else {
 	include '../views/header.php';
 }
-include '../views/image_list.php';
+
+if($is_logged_in) {
+	include '../views/user_page_main.php';
+} else {
+	include '../views/image_list.php';
+}
 include '../views/footer.php';
 

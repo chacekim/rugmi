@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8fd7a70417d61b219f6660e5d9e076f3fa1109c0
 <?php 
 // controller
 
@@ -15,6 +18,8 @@ require_once '../models/images.collection.php';
 $is_logged_in = Auth::is_logged_in();
 $images = new Image();
 $imgaes->url = $_GET['url'];
+$imgaes->caption = $_GET['caption'];
+
 
 // 3. Load views
 
@@ -23,7 +28,12 @@ if($is_logged_in) {
 } else {
 	include '../views/header.php';
 }
+
 include '../views/image_list.php';
+
 include '../views/footer.php';
  ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8fd7a70417d61b219f6660e5d9e076f3fa1109c0
