@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-<?php  
 
 
-
-
-include '../views/header.php';
-
-include '../views/image_list.php';
-
-=======
 <?php 
 // controller
 
@@ -35,4 +26,4 @@ if($is_logged_in) {
 include '../views/image_list.php';
 include '../views/footer.php';
  ?>
->>>>>>> b19666d18edf813458daa6e20a380c8b09ec972d
+
