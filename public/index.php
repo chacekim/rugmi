@@ -24,8 +24,9 @@ if($_POST) {
 
 	$comment->content = $_POST['comment'];
 	$comment->image_id = $_POST['image_id'];
+	$comment->user_id = $_SESSION['user']['id'];
 
-	print_r($comment->image_id);
+	$comment->save();
 
 
 }
