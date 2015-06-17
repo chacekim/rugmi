@@ -10,7 +10,7 @@
 
 	<?php foreach ($images->items as $image): ?>
 
-		<li class="flex-item"><img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->caption ?>"></li>
+		<img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->caption ?>" class="flex-item">
 
 	<?php endforeach ; ?>
 	</ul>
