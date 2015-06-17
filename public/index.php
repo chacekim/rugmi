@@ -11,10 +11,8 @@ require_once '../models/images.collection.php';
 // 2. Logic
 
 $is_logged_in = Auth::is_logged_in();
-$image = new Image();
-$image->url = $image->load($url);
-$image->caption = $image->load($caption);
 
+$images = new Images_Collection(['deleted' => '0']);
 
 // 3. Load views
 
@@ -23,6 +21,8 @@ if($is_logged_in) {
 } else {
 	include '../views/header.php';
 }
+
 include '../views/image_list.php';
+
 include '../views/footer.php';
  ?>
