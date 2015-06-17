@@ -138,7 +138,6 @@ nav.sidebar a.button:hover{
 	font-weight: bolder; 
 }
 
-@import "compass/css3";
 
 .flex-container {
 	padding: 0;
