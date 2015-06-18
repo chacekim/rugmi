@@ -24,5 +24,6 @@ if($is_logged_in) {
 
 include '../views/image_list.php';
 
+
+
 include '../views/footer.php';
- ?>

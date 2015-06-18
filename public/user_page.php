@@ -7,7 +7,11 @@
 require_once '../libraries/auth.lib.php';
 require_once '../libraries/database.lib.php';
 require_once '../libraries/form.lib.php';
+
+
+
 require_once '../libraries/url.lib.php';
+
 require_once '../models/images.collection.php';
 require_once '../models/image.model.php';
 require_once '../models/user.model.php';
@@ -16,6 +20,15 @@ require_once '../models/user.model.php';
 
 Auth::kickout('login.php');
 $is_logged_in = Auth::is_logged_in();
+
+// print_r($_SESSION['user']['id']);
+$user_images = new Images_Collection([
+
+	'deleted' => '0',
+	'user_id' => $_SESSION['user']['id']
+
+	]);
+
 
 
 
@@ -63,6 +76,9 @@ if($is_logged_in) {
 if($is_logged_in) {
 	include '../views/user_page_main.php';
 	include '../views/user_image_list.php';
+
+	include '../views/upload_form.php';
+
 } else {
 	include '../views/image_list.php';
 }

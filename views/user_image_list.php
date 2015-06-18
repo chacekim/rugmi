@@ -6,6 +6,7 @@
 
 	<?php foreach ($user_images->items as $image): ?>
 
+
 		<img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->url ?>" class="flex-item">
 
 		<?= Form::open() ?>
@@ -19,6 +20,7 @@
 			<?= Form::submit() ?>
  
 		<?= Form::close() ?>
+
 
 	<?php endforeach ; ?>
 	</ul>
