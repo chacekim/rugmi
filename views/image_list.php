@@ -4,10 +4,6 @@
 <main>
 	<ul class="flex-container">
 	
-	<?php $images = new Images_Collection([
-		'deleted' => '0'
-	]); ?>
-
 	<?php foreach ($images->items as $image): ?>
 
 		<li>
