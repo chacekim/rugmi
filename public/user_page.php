@@ -14,7 +14,13 @@ require_once '../models/user.model.php';
 
 Auth::kickout('login.php');
 $is_logged_in = Auth::is_logged_in();
-$images = new Model();
+// print_r($_SESSION['user']['id']);
+$user_images = new Images_Collection([
+
+	'deleted' => '0',
+	'user_id' => $_SESSION['user']['id']
+
+	]);
 
 // 3. Load views
 
@@ -26,6 +32,7 @@ if($is_logged_in) {
 
 if($is_logged_in) {
 	include '../views/user_page_main.php';
+	include '../views/user_image_list.php';
 } else {
 	include '../views/image_list.php';
 }
