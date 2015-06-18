@@ -14,7 +14,7 @@ require_once '../models/user.model.php';
 
 Auth::kickout('login.php');
 $is_logged_in = Auth::is_logged_in();
-// print_r($_SESSION['user']['id']);
+
 $user_images = new Images_Collection([
 
 	'deleted' => '0',
