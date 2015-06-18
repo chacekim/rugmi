@@ -4,13 +4,13 @@
 <main>
 	<ul class="flex-container">
 	
-	<?php $images = new Images_Collection([
-		'deleted' => '0'
-	]); ?>
-
 	<?php foreach ($images->items as $image): ?>
 
-		<img src="<?php echo $image->url ?>" alt="<?php echo $image->caption ?>" class="flex-item">
+
+		<li>
+			<a href=<?php echo $image->id ?>"><img src="assets/img/<?php echo $image->url ?>?id=<?php echo $image->id ?>" alt="<?php echo $image->caption ?>" class="flex-item"></a>
+		</li>
+
 
 	<?php endforeach ; ?>
 	</ul>

@@ -1,3 +1,4 @@
+
 <?= Form::open_upload('upload_image.php') ?>
 
 	<?= Form::max_file_size()?>
@@ -13,4 +14,3 @@
 		
 
 	<?= Form::close() ?>
-

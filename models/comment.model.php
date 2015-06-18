@@ -5,7 +5,7 @@
 # load the Model library if it has not been done
 require_once '../libraries/model.lib.php';
 
-class comment extends Model {
+class Comment extends Model {
 
 	# tell the page model what table it belongs to
 	protected $table = 'comments';
