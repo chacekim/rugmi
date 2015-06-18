@@ -10,6 +10,7 @@
 	<header>
 		<div class="container">
 			<h1>Rugmi Home</h1>
+			<a href="upload_image.php">Upload</a>
 			<nav>
 				<a href="index.php">Home</a>
 				<a href="user_page.php">My Images</a>
