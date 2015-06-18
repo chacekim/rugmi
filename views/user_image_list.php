@@ -6,7 +6,7 @@
 
 	<?php foreach ($user_images->items as $image): ?>
 
-		<img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->caption ?>" class="flex-item">
+		<img src="<?php echo $image->url ?>" alt="<?php echo $image->caption ?>" class="flex-item">
 
 	<?php endforeach ; ?>
 	</ul>

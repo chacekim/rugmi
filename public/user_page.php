@@ -6,6 +6,8 @@
 // 1. Load libraries and models
 require_once '../libraries/auth.lib.php';
 require_once '../libraries/database.lib.php';
+require_once '../libraries/form.lib.php';
+
 require_once '../models/images.collection.php';
 require_once '../models/image.model.php';
 require_once '../models/user.model.php';
@@ -33,6 +35,7 @@ if($is_logged_in) {
 if($is_logged_in) {
 	include '../views/user_page_main.php';
 	include '../views/user_image_list.php';
+	include '../views/upload_form.php';
 } else {
 	include '../views/image_list.php';
 }

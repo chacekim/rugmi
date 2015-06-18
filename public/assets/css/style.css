@@ -157,7 +157,7 @@ nav.sidebar a.button:hover{
 	flex-direction: row-reverse;
 	width: 200px;
 	height: 150px; 
-	background-color: blue;
+	
 	margin: 5px;
 	transition: .2s;
 }
