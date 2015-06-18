@@ -13,10 +13,11 @@
 			<div class="row">
 				<?= Form::label('caption', 'Edit Caption') ?>
 				<?= Form::textarea('caption', $image->caption) ?>
+				<?= Form::hidden('image_id', $image->id) ?>
 			</div>
 
 			<?= Form::submit() ?>
-
+ 
 		<?= Form::close() ?>
 
 	<?php endforeach ; ?>

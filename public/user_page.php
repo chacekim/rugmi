@@ -17,6 +17,19 @@ require_once '../models/user.model.php';
 Auth::kickout('login.php');
 $is_logged_in = Auth::is_logged_in();
 // print_r($_SESSION['user']['id']);
+
+
+if($_POST){
+	
+	$user_image = new Image();
+	$user_image->caption = $_POST['caption'];
+	$user_image->id = $_POST['image_id'];
+	$user_image->user_id = $_SESSION['user']['id'];
+
+	$user_image->save();
+
+}
+
 $user_images = new Images_Collection([
 
 	'deleted' => '0',
@@ -24,15 +37,6 @@ $user_images = new Images_Collection([
 
 	]);
 
-if($_POST){
-	
-	$user_image = new Image();
-	$user_image->caption = $_GET['caption'];
-
-	$user_image->save();
-
-	URL::redirect('user_page.php');
-}
 
 // if($_POST){
 
