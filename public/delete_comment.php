@@ -15,9 +15,6 @@ $comment->load($_GET['id']);
 
 $comment->delete();
 
-
-
-
 // 3 views
 
 // URL::redirect('view_image.php?id='.$comment->image_id);
