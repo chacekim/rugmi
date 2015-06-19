@@ -42,7 +42,5 @@ if($is_logged_in) {
 }
 
 include '../views/comment_form.php';
-
 include '../views/footer.php';
-
  ?>

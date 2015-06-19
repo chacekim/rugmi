@@ -18,7 +18,6 @@ $comment->load($_GET['id']);
 $image = new Image();
 $image->load($_GET['image_id']);
 
-
 if($_POST && $_POST['comment'] != '') {
 
 	$comment->content = $_POST['comment'];	
@@ -39,5 +38,4 @@ if($is_logged_in) {
 include '../views/comment_form.php';
 
 include '../views/footer.php';
-
  ?>
