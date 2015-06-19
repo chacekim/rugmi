@@ -2,11 +2,12 @@
 
 require_once '../libraries/form.lib.php';
 require_once '../libraries/auth.lib.php';
-require_once '../libraries/database.lib.php';
+require_once '../libraries/url.lib.php';
 include_once '../models/image.model.php';
 require_once '../models/comment.model.php';
 require_once '../models/comments.collection.php';
 
+URL::save();
 
 $is_logged_in = Auth::is_logged_in();
 
