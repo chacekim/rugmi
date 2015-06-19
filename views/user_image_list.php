@@ -6,8 +6,8 @@
 
 	<?php foreach ($user_images->items as $image): ?>
 
+		<a href="view_image.php?id=<?php echo $image->id ?>"><img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->url ?>" class="flex-item"></a>
 
-		<img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->url ?>" class="flex-item">
 
 		<?= Form::open() ?>
 
