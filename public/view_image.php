@@ -30,6 +30,8 @@ $comments = new Comments_Collection();
 $comments->load();
 $comments->getCommentsByImage($image->id);
 
+$logged_in_user_id = Auth::user_id();
+
 // 3. Load views
 
 if($is_logged_in) {
