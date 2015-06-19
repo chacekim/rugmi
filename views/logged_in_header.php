@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rugmi</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/bootstrap.js"></script>
 </head>
 <body>
 	
