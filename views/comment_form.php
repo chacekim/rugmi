@@ -28,17 +28,19 @@
 							<div class="comment-content"><?php echo $comment->content ?></div>
 						</li>
 					</div>
-					<?php if($logged_in_user_id == $comment->user_id || $logged_in_user_id == $image->user_id) : ?>
-						
-						<a href="delete_comment.php?id=<?php echo $comment->id ?>&image_id=<?php echo $image->id  ?>">Delete</a>
+					<div class="comment-actions">
+						<?php if($logged_in_user_id == $comment->user_id || $logged_in_user_id == $image->user_id) : ?>
+							
+							<a href="delete_comment.php?id=<?php echo $comment->id ?>&image_id=<?php echo $image->id  ?>">Delete</a>
 
-					<?php endif ; ?>
+						<?php endif ; ?>
 
-					<?php if($logged_in_user_id == $comment->user_id || $image->user_id == 0) : ?>
-						
-						<a href="edit_comment.php?id=<?php echo $comment->id ?>&image_id=<?php echo $image->id  ?>">Edit</a>
+						<?php if($logged_in_user_id == $comment->user_id || $image->user_id == 0) : ?>
+							
+							<a href="edit_comment.php?id=<?php echo $comment->id ?>&image_id=<?php echo $image->id  ?>">Edit</a>
 
-					<?php endif ; ?>
+						<?php endif ; ?>
+					</div>
 				</ul>
 
 			<?php endforeach; ?>

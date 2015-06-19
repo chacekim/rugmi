@@ -184,5 +184,28 @@ nav.sidebar a.button:hover{
 
 .view-page-comment-edit{
 	display: flex;
+  	justify-content: space-between;
+	margin-bottom: 4em;
+}
+
+.view-image-comment{
+	display: flex;
+	justify-content: space-between;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 30px;
+	list-style: none;
+}
+
+.view-page-comment-list{
+	margin: 20px;
+}
+
+.comment-actions{
+	width: 250px;
+}
+
+.comment-actions a{
+	margin-left: 10px;
 }
 
