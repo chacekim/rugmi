@@ -40,12 +40,7 @@ class Form {
 	*	
 	*/
 	public static function open_upload($action = '', $extras = []){
-		$attrs = self::make_attrs(array_merge([
-			'action' => $action
-		], $extras));
-
-		$html = "<form $attrs enctype='multipart/form-data'>";
-		return $html;
+		return self::open($action, 'post', array_merge(['enctype' => 'multipart/form-data'], $extras));
 	}
 
 	/**

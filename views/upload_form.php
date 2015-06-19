@@ -1,11 +1,16 @@
-<h1>Upload your images !</h1>
 
-<div class="row">
-	<?php echo Form::open_upload() ?>
+<?= Form::open_upload('upload_image.php') ?>
+
+	<?= Form::max_file_size()?>
+
+		<div class="form_group">
+			<?=Form::label('file', 'File') ?>
+			<?=Form::file() ?>
 	
-		<?php echo Form::label('uploads', 'Your Image') ?>
-		<?php echo Form::file() ?>
+		</div>
+		
+		<?= Form::submit() ?>
 
-	<?php echo Form::close() ?>
-	<?php echo Form::submit() ?>
-</div>
+		
+
+	<?= Form::close() ?>

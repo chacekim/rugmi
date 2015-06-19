@@ -8,6 +8,7 @@
 
 		<a href="view_image.php?id=<?php echo $image->id ?>"><img src="assets/img/<?php echo $image->url ?>" alt="<?php echo $image->url ?>" class="flex-item"></a>
 
+
 		<?= Form::open() ?>
 
 			<div class="row">
@@ -19,6 +20,7 @@
 			<?= Form::submit() ?>
  
 		<?= Form::close() ?>
+
 
 	<?php endforeach ; ?>
 	</ul>
