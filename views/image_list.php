@@ -8,7 +8,7 @@
 
 
 		<li>
-			<a href="view_image.php?id=<?php echo $image->id ?>"><img src="assets/img/<?php echo $image->url ?>?id=<?php echo $image->id ?>" alt="<?php echo $image->caption ?>" class="flex-item"></a>
+			<a href="view_image.php?id=<?php echo $image->id ?>"><img src="<?php echo $image->url ?>?id=<?php echo $image->id ?>" alt="<?php echo $image->caption ?>" class="flex-item"></a>
 		</li>
 
 	<?php endforeach ; ?>
