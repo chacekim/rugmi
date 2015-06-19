@@ -46,6 +46,10 @@
 
 	}
 
+	include '../views/logged_in_header.php';
+
+	include '../views/upload_form.php';
+
 
 
 

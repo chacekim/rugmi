@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rugmi</title>
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/bootstrap.js"></script>
 </head>
 <body>
 	
@@ -12,6 +14,7 @@
 			<h1>Rugmi Home</h1>
 			
 			<nav>
+				<a href="upload_image.php">Upload</a>
 				<a href="index.php">Home</a>
 				<a href="user_page.php">My Images</a>
 				<a href="logout.php">Logout</a>
