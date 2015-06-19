@@ -17,6 +17,7 @@ class Comments_Collection extends Collection {
 			->select('*')
 			->from('comments')
 			->where(['deleted' => 0])
+			->order_by('created_at', 'desc')
 			->get();
 
 		foreach($comments as $key => $comment){
@@ -38,6 +39,7 @@ class Comments_Collection extends Collection {
 				['deleted' => 0,
 				 'image_id' => $image_id]
 				)
+			->order_by('created_at', 'desc')
 			->get();
 
 		foreach($comments as $key => $comment){

@@ -21,6 +21,7 @@ if($_POST) {
 	$comment->content = $_POST['comment'];
 	$comment->image_id = $_POST['image_id'];
 	$comment->user_id = Auth::user_id();
+	$comment->created_at = date("Y-m-d H:i:s");	
 
 	$comment->save();
 }
@@ -41,7 +42,5 @@ if($is_logged_in) {
 }
 
 include '../views/comment_form.php';
-
 include '../views/footer.php';
-
  ?>
