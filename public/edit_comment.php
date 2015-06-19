@@ -15,6 +15,10 @@ $comment = new Comment();
 
 $comment->load($_GET['id']);
 
+if($comment->user_id != Auth::user_id()){
+	URL::restore();
+}
+
 $image = new Image();
 $image->load($_GET['image_id']);
 
@@ -24,7 +28,7 @@ if($_POST && $_POST['comment'] != '') {
 
 	$comment->save();
 
-	URL::redirect('view_image.php?id='.$_GET['image_id']);
+	URL::restore();
 }
 
 // 3. Load views
