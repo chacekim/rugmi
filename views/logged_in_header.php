@@ -12,6 +12,7 @@
 			<h1>Rugmi Home</h1>
 			
 			<nav>
+				<a href="upload_image.php">Upload</a>
 				<a href="index.php">Home</a>
 				<a href="user_page.php">My Images</a>
 				<a href="logout.php">Logout</a>

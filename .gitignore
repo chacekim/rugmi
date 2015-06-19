@@ -1,3 +1,4 @@
 .DS_STORE
 ._*
 libraries/config.lib.php
+stfp_config.json
