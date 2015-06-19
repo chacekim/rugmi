@@ -3,7 +3,7 @@
 <div>
 	<div class="view-page-comment-edit">
 		<div>
-			<img src="assets/img/<?php echo $image->url ?>">
+			<img src="<?php echo $image->url ?>">
 		</div>
 		<div>
 			<?php echo Form::open() ?>
